@@ -1,0 +1,53 @@
+{
+  "name": "calimaco",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:local": "env-cmd -e LOCAL next dev -p 3012",
+    "dev": "env-cmd -e DEV next dev -p 3012",
+    "dev:aws": "env-cmd -e AWS next dev -p 3012",
+    "build": "npm run clean && env-cmd -e DEV next build",
+    "build:staging": "npm run clean && env-cmd -e STAGING next build",
+    "build:aws": "npm run clean && env-cmd -e AWS next build",
+    "export": "next export -o outdir",
+    "start": "next start",
+    "clean": "npx rimraf .next",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@calimaco/npm-package-react-test": "^0.5.85",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@hookform/resolvers": "^2.8.8",
+    "@mui/material": "^5.6.1",
+    "axios": "^0.26.1",
+    "env-cmd": "^10.1.0",
+    "i18next": "^21.6.16",
+    "next": "^12.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.30.0",
+    "react-icons": "^4.3.1",
+    "react-tooltip": "^4.2.21",
+    "socket.io-client": "^4.4.1",
+    "toastr": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.29.4",
+    "lint-staged": "^12.3.8",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.24"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
