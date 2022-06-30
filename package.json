@@ -15,6 +15,8 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
+    "@calimaco/base": "^0.9.15",
+    "@calimaco/components": "^0.9.9",
     "@calimaco/npm-package-react-test": "^0.5.85",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
